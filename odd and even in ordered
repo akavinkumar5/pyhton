@@ -1,0 +1,26 @@
+a=int(input())
+l=0
+m=0
+s=0
+b=0
+while a>0:
+    num =a%10
+    a=a//10
+    if(num%2==0):
+        m=num+m*10     
+    else:
+        l=num+l*10
+while m>0:
+    num =m%10
+    m=m//10
+    if(num%2==0):
+        s=s*10+num     
+while l>0:
+    num =l%10
+    l=l//10
+    if(num%2!=0):
+        b=b*10+num     
+  
+    
+print(b,end="")
+print(s)
