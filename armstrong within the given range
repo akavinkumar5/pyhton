@@ -1,0 +1,12 @@
+n1=int(input())
+n2=int(input())
+for j in range(n1,n2):
+    l=len(str(j))
+    sum=0
+    for i in str(j):
+        #print(i)
+        arm=int(i)**l
+        sum +=arm
+    if(j==sum):
+        print(sum)
+    
