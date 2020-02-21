@@ -1,0 +1,4 @@
+a=int(input())
+for i in range (0,a):
+    print(chr(97+i)+chr(122-i))
+#print(chr(90))
