@@ -1,0 +1,18 @@
+I=int(input())
+#print(max(str(a)))
+large=0
+sec=0
+a=I
+while a>0:
+    num =a%10
+    a=a//10
+    if(num>=large):
+        large=num
+print(large)
+while I>0:
+    num =I%10
+    I //=10
+    if(large!=num):
+        if(num>=sec):
+            sec=num
+print(sec)
