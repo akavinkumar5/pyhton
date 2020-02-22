@@ -1,0 +1,12 @@
+a=input()
+b=input()
+count1=0
+count2=0
+for i in a:
+    if(i in b):
+        count1 +=(a.count(i))
+        count2 +=(b.count(i))
+if(count1==count2):
+    print('1')
+else:
+    print('0')
