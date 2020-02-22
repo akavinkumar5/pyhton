@@ -1,0 +1,10 @@
+a=int(input())
+l=[]
+l.append(1)
+l.append(1)
+for i in range (1,a+1,2):
+    first=l[i-1]*2
+    l.append(first)
+    second=l[i]*3
+    l.append(second)
+print(*l)
