@@ -1,0 +1,7 @@
+a=input()
+spl='~!@#$%^&*()_+{}[]|\:;?/>.<,'
+b=""
+for i in a:
+    if(i not in spl):
+        b+=i
+print(b)
