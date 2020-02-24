@@ -1,0 +1,22 @@
+#a=['p','r','o','g','r','a','m']
+inp=input()
+a=[]
+for i in inp:
+    a.append(i)
+l=['a','e','i','o','u','A','E','I','O','U']
+b=[]
+g=[]
+c=[]
+for i in a:
+    if i in l:
+        s=a.index(i)
+        g.append(i)    
+        b.append(s)
+    else:
+        c.append(i)
+c=c[::-1]
+for i in range(0,len(b)):
+    c.insert(b[i],g[i])
+print(''.join(c))
+    
+        
