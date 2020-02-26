@@ -1,0 +1,26 @@
+r=4
+c=2
+b=[[0 for i in range(r)]for j in range(c)]
+
+l=[[0 for i in range(r)]for j in range(c)]
+m=[[0 for i in range(r)]for j in range(c)]
+for i in range(0,r):
+    for j in range(0,c):
+        b[i][j]=int(input())
+for i in range(0,r):
+    for j in range(0,c):
+        l[i][j]=int(input())
+
+for i in range(0,r):
+    for j in range(0,c):
+        print(b[i][j],end=' ')
+    print('')
+for i in range(r):
+    for j in range(c):
+        for k in range(r):
+            m[i][j] +=(b[i][k] * l[k][j])
+
+for i in range(0,r):
+    for j in range(0,c):
+        print(m[i][j],end=' ')
+    print('')
