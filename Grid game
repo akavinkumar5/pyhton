@@ -1,0 +1,13 @@
+n=int(input())
+a=0
+b=0
+min,min2=0,0
+for i in range(n):
+    a,b=map(int,input().split())
+    if(i==0):
+        min,min2=a,b
+    if(a<min):
+        min=a
+    if(b<min2):
+        min2=b
+print(min *min2)
